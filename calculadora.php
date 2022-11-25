@@ -11,24 +11,23 @@
 
         $operacion=readline ("ingrese la operacion [s,r,d,m]");
 
-        if ($operacion == "s")
-        {
-            print suma ($primerNumero,$segundoNumero);
-        }
-        elseif ($operacion =="r")
-        {
-           
+    switch ($operacion){
+        case "s":
+            print suma ($primerNumero,$segundoNumero );
+            break;
+         case "r":
+                print suma ($primerNumero,$segundoNumero );
+                break;
+         case "d":
+              print suma ($primerNumero,$segundoNumero );
+              break;
+          case "m":
+              print suma ($primerNumero,$segundoNumero );
+              break;
 
-            print resta ($primerNumero,$segundoNumero);
-    
-        }
-        elseif  ($operacion =="d")
-        {
-            print divicion  ($primerNumero,$segundoNumero);
+        default: 
+        print "no existe la operacion $operacion";
+        break;
 
-        }
-        elseif  ($operacion =="m")
-        {
-            print multiplicacion  ($primerNumero,$segundoNumero);
-        }
+    }
         
